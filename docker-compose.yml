@@ -1,0 +1,17 @@
+version: '3.0'
+services:
+    package:
+        image: go.v1.15.8.service-content-management:0.0.1
+        stdin_open: true
+        tty: true
+        container_name: service-content-management
+        restart: always
+        environment:
+            TZ: "Asia/Jakarta"
+        ports:
+            - 474:474
+        env_file: .env
+        volumes: 
+            - ./logs:/app/logs
+            - /etc/hosts:/etc/hosts
+            - /apps/file:/app/file

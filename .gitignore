@@ -1,0 +1,14 @@
+.env*
+cert/
+file/
+vendor
+ssl
+logs
+key
+env_local
+env_preprod
+env_prod
+newrelic.log
+deploy*
+makefile
+Dockerfile
